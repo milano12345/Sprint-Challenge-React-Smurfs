@@ -1,18 +1,14 @@
-import React, { Component } from 'react';  
-import { Link } from 'react-router-dom'
+import React from 'react';  
+import { NavLink } from 'react-router-dom'
 
 function HeaderComponent (){
   return (
-      
-    <ul>
-        <li><h1>The Smurfs</h1></li>
-      <li>
-        <Link to="/"> Home </Link>
-      </li>
-      <li>
-        <Link to="/SmurfForm"> Smurf Form </Link>
-      </li>
-    </ul>
+    <nav>
+        <a>The Smurfs!</a>
+        <a><NavLink to="/"> Home </NavLink></a>
+        <a><NavLink to="/SmurfForm"> Smurf Form </NavLink></a>
+    </nav>
+
   )
 }
 
